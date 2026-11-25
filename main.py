@@ -1,9 +1,10 @@
 import os
 
 FRIEND = "The snooze button is my most loyal friend: "
-FAIL = "it lets me fail at waking up nine times before 8 a.m. "
+FAIL_A = "it lets me fail at waking up "
+FAIL_B = "nine times before 8 a.m. "
 JUDGE = "and never once judges me for it."
-LINE = FRIEND + FAIL + JUDGE
+LINE = FRIEND + FAIL_A + FAIL_B + JUDGE
 
 os.makedirs("/output", exist_ok=True)
 with open("/output/entry.txt", "w", encoding="utf-8", newline="") as f:
